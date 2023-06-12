@@ -11,7 +11,7 @@ const AllBlogs = () => {
   }, [blog]);
   return (
     <React.Fragment>
-      <div className="flex flex-wrap justify-center mt-10 ">
+      <div className="flex flex-wrap justify-center mt-10 mb-10 ">
         {blog.map((blog) => (
           <div className="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-2">
             <div className="h-64">
