@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.blogContainer{
+    width: 50%;
+    margin: 20px auto;
+}
+.blogContainer h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.blogContainer img{
+    width: 100%;
+}
+@media (min-width: 100px) and (max-width:639px) {
+   .blogContainer{
+    width: 95%;
+   } 
+}

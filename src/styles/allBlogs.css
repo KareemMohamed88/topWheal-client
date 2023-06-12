@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.all-blogs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin: 10px 0;
+}
+.all-blogs .card{
+    width: 350px;
+    height: 390px;
+    margin: 20px 0;
+}
+.all-blogs .card img{
+    width: 100%;
+}
+.all-blogs .card h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.all-blogs .card a{
+    padding: 9px 21px;
+    background: linear-gradient(45deg, #22d3ee, #60a5fa);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
