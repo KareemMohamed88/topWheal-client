@@ -13,7 +13,7 @@ const AllBlogs = () => {
     <React.Fragment>
       <div className="flex flex-wrap justify-center mt-10 mb-10 ">
         {blog.map((blog) => (
-          <div className="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-2">
+          <div className="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-5 mx-5">
             <div className="h-64">
               <a href={`/blogs/${blog._id}`}>
                 <img
