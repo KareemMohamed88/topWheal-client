@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import "../styles/allBlogs.css";
 const AllBlogs = () => {
   const api = "https://topwwheal-server.onrender.com";
   const [blog, setBlog] = useState([]);
