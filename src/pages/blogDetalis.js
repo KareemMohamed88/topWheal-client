@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Axios from "axios";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import '../styles/blogDetalis.css'
+import "../styles/blogDetalis.css";
 
 const BlogDetalis = () => {
   const api = "https://topwwheal-server.onrender.com";
@@ -21,23 +21,23 @@ const BlogDetalis = () => {
         <div className="blogContainer">
           <h1 className="text-3xl mb-5">{blog.title}</h1>
           <img src={blog.mainImg} />
-          <br/>
+          <br />
           <p>{blog.p1}</p>
-          <br/>
+          <br />
           <p>{blog.p2}</p>
-          <br/>
+          <br />
           <p>{blog.p3}</p>
-          <br/>
+          <br />
           <img src={blog.secondImg} />
-          <br/>
+          <br />
           <p>{blog.p4}</p>
-          <br/>
+          <br />
           <p>{blog.p5}</p>
-          <br/>
+          <br />
           <p>{blog.p6}</p>
         </div>
-        <br/>
-        <Footer/>
+        <br />
+        <Footer />
       </div>
     </React.Fragment>
   );
