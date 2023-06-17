@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 import '../styles/blogDetalis.css'
 
 const BlogDetalis = () => {
-  const api = "http://localhost:3001";
+  const api = "https://topwwheal-server.onrender.com";
   const [blog, setBlog] = useState({});
   const Params = useParams();
   useEffect(() => {
