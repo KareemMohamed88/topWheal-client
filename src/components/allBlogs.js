@@ -21,7 +21,7 @@ const AllBlogs = () => {
         {blog.slice(0, visible).map((blog) => (
           <div
             key={blog._id}
-            className="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-5 mx-5"
+            className="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow  my-5 mx-5"
           >
             <a href={`/blogs/${blog._id}`}>
               <div className="h-52 overflow-hidden flex justify-center items-center">
