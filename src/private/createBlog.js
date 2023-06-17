@@ -6,8 +6,8 @@ import Footer from "../components/footer";
 import "./style.css";
 
 const CreateBlog = () => {
-  const api = "http://localhost:5000";
-
+  const api = "http://localhost:3001";
+  const [id, setId] = useState(0);
   const [title, setTitle] = useState("");
   const [mainImg, setMainImg] = useState("");
   const [secondImg, setSecondImg] = useState("");
@@ -19,6 +19,7 @@ const CreateBlog = () => {
   const [p6, setP6] = useState("");
   const createBlog = () => {
     Axios.post(`${api}/createBlog`, {
+      id,
       title,
       mainImg,
       secondImg,
@@ -36,18 +37,27 @@ const CreateBlog = () => {
     <React.Fragment>
       <Nav />
       <form action="/">
+        <input onChange={(e) => setId(e.target.value)} type="text" />
         <input onChange={(e) => setTitle(e.target.value)} type="text" />
-        <input className="imagesInp" onChange={(e) => setMainImg(e.target.value)} type="text" />
+        <input
+          className="imagesInp"
+          onChange={(e) => setMainImg(e.target.value)}
+          type="text"
+        />
         <input onChange={(e) => setP1(e.target.value)} type="text" />
         <input onChange={(e) => setP2(e.target.value)} type="text" />
         <input onChange={(e) => setP3(e.target.value)} type="text" />
-        <input className="imagesInp" onChange={(e) => setSecondImg(e.target.value)} type="text" />
+        <input
+          className="imagesInp"
+          onChange={(e) => setSecondImg(e.target.value)}
+          type="text"
+        />
         <input onChange={(e) => setP4(e.target.value)} type="text" />
         <input onChange={(e) => setP5(e.target.value)} type="text" />
         <input onChange={(e) => setP6(e.target.value)} type="text" />
         <button onClick={createBlog} type="submit" name="submit">
-        POST
-      </button>
+          POST
+        </button>
       </form>
       <Footer />
     </React.Fragment>

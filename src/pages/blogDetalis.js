@@ -6,11 +6,11 @@ import Footer from "../components/footer";
 import '../styles/blogDetalis.css'
 
 const BlogDetalis = () => {
-  const api = "https://topwwheal-server.onrender.com";
+  const api = "http://localhost:3001";
   const [blog, setBlog] = useState({});
   const Params = useParams();
   useEffect(() => {
-    Axios.get(`${api}/blogs/${Params.id}`).then((res) => {
+    Axios.get(`${api}/article/${Params.id}`).then((res) => {
       setBlog(res.data);
     });
   }, []);
