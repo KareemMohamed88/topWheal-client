@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import Axios from "axios";
 import Nav from "../components/nav";
@@ -6,7 +7,7 @@ import Footer from "../components/footer";
 import "../styles/blogDetalis.css";
 
 const BlogDetalis = () => {
-  const api = "https://topwheal-server.onrender.com";
+  const api = "https://dark-puce-seahorse-suit.cyclic.app";
   const [blog, setBlog] = useState({});
   const Params = useParams();
   useEffect(() => {
@@ -16,6 +17,10 @@ const BlogDetalis = () => {
   }, [Params.id]);
   return (
     <React.Fragment>
+      <Helmet>
+        <meta name="description" content={blog.p1} />
+        <title>{blog.title}</title>
+      </Helmet>
       <div className="container-fluid">
         <Nav />
         <div className="blogContainer">

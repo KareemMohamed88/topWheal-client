@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 const AllBlogs = () => {
-  const api = "https://topwheal-server.onrender.com";
+  const api = "https://dark-puce-seahorse-suit.cyclic.app";
   const [blog, setBlog] = useState([]);
   const [pageCount, setPageCount] = useState(1);
   const handleNext = () => {
