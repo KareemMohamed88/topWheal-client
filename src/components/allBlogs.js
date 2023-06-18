@@ -3,7 +3,7 @@ import Axios from "axios";
 const AllBlogs = () => {
   const api = "http://localhost:3001";
   const [blog, setBlog] = useState([]);
-  const [pageCount, setPageCount] = useState(1)
+  const [pageCount, setPageCount] = useState(1);
   const handleNext = () => {
     setPageCount((prevValue) => prevValue + 1);
   };
@@ -59,16 +59,15 @@ const AllBlogs = () => {
         ))}
       </div>
       <div className="w-full flex justify-center my-10">
-        <button onClick={handleNext} type="submit">
-          next
-        </button>
-        <button onClick={handlePrevious} type="submit">
+        <button className="px-5 py-3 bg-blue-400 text-white font-bold border rounded-s-md" onClick={handlePrevious} type="submit">
           previous
+        </button>
+        <button className="px-5 py-3 bg-blue-400 text-white font-bold border rounded-e-md" onClick={handleNext} type="submit">
+          next
         </button>
       </div>
     </React.Fragment>
   );
 };
-
 
 export default AllBlogs;
