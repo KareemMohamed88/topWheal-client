@@ -5,7 +5,6 @@ import Axios from "axios";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import "../styles/blogDetalis.css";
-
 const BlogDetalis = () => {
   const api = "https://dark-puce-seahorse-suit.cyclic.app";
   const [blog, setBlog] = useState({});
@@ -18,8 +17,8 @@ const BlogDetalis = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <meta name="description" content={blog.p1} />
         <title>{blog.title}</title>
+        <meta name="description" content={blog.p1} />
       </Helmet>
       <div className="container-fluid">
         <Nav />
