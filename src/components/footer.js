@@ -1,9 +1,15 @@
 import React from "react";
-import "../styles/footer.css";
 function footer() {
   return (
     <React.Fragment>
-      <div className="footer"></div>
+      <div
+        className="footer"
+        style={{
+          width: "100%",
+          background: "linear-gradient(90deg, #22d3ee, #60a5fa)",
+          height: "10px",
+        }}
+      ></div>
     </React.Fragment>
   );
 }
