@@ -25,7 +25,7 @@ const BlogDetalis = () => {
         <Nav />
         <div className="blogContainer">
           <h1 className="text-3xl mb-5">{blog.title}</h1>
-          <img src={blog.mainImg} alt="faild to load" />
+          <img width={"100%"} height={"100%"} src={blog.mainImg} alt="faild to load" />
           <br />
           <p>{blog.p1}</p>
           <br />
@@ -33,7 +33,7 @@ const BlogDetalis = () => {
           <br />
           <p>{blog.p3}</p>
           <br />
-          <img src={blog.secondImg} alt="faild to load" />
+          <img width={"100%"} height={"100%"} src={blog.secondImg} alt="faild to load" />
           <br />
           <p>{blog.p4}</p>
           <br />

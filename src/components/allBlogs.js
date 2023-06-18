@@ -25,7 +25,7 @@ const AllBlogs = () => {
           >
             <a href={`/blogs/${blog._id}`}>
               <div className="h-44 overflow-hidden flex justify-center items-center">
-                <img className="rounded-t-lg" src={blog.mainImg} alt="" />
+                <img width={"100%"} height={"100%"} className="rounded-t-lg" src={blog.mainImg} alt="" />
               </div>
             </a>
             <div className="p-5">
