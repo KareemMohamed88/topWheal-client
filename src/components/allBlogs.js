@@ -23,10 +23,11 @@ const AllBlogs = () => {
             key={blog._id}
             className="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow  my-5 mx-5 overflow-hidden"
           >
-            <a href={`/blogs/${blog._id}`}>
+            <a className="text-transparent" href={`/blogs/${blog._id}`}>
               <div className="h-44 overflow-hidden flex justify-center items-center">
                 <img width={"100%"} height={"100%"} className="rounded-t-lg" src={blog.mainImg} alt="" />
               </div>
+              learn more
             </a>
             <div className="p-5">
               <a href={`/blogs/${blog._id}`}>
