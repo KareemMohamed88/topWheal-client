@@ -21,7 +21,9 @@ export default function Example() {
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
+                  <span className='text-xl'>
                   <ion-icon className="text-9xl" name="menu-outline"></ion-icon>
+                  </span>
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
