@@ -18,6 +18,7 @@ const BlogDetalis = () => {
     <React.Fragment>
       <Helmet>
         <title>{blog.title}</title>
+        <link rel="favicon" href="https://ibb.co/brLNcF1" />
         <meta name="description" content={blog.p1} />
       </Helmet>
       <div className="container-fluid">
