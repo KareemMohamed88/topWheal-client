@@ -30,11 +30,9 @@ const AllBlogs = () => {
               learn more
             </a>
             <div className="p-5">
-              <a href={`/blogs/${blog._id}`}>
                 <h5 className="mb-6 text-2xl  text-gray-900">
                   {blog.title}
                 </h5>
-              </a>
 
               <a
                 href={`/blogs/${blog._id}`}
