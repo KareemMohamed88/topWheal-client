@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 const AllBlogs = () => {
-  const api = "http://localhost:3001";
+  const api = "https://topwwheal-server.onrender.com";
   const [blog, setBlog] = useState([]);
   const [pageCount, setPageCount] = useState(1);
   const handleNext = () => {
