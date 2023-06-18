@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 const AllBlogs = () => {
-  const api = "https://topwwheal-server.onrender.com";
+  const api = "http://localhost:3001";
   const [blog, setBlog] = useState([]);
-  const [visible, setVisible] = useState(3);
-  const showMoreItems = () => {
-    setVisible((prevValue) => prevValue + 3);
+  const [pageCount, setPageCount] = useState(1)
+  const handleNext = () => {
+    setPageCount((prevValue) => prevValue + 1);
+  };
+  const handlePrevious = () => {
+    setPageCount((prevValue) => prevValue - 1);
   };
   useEffect(() => {
-    Axios.get(`${api}/article`).then((res) => {
+    Axios.get(`${api}/article?page=${pageCount}&limit=2`).then((res) => {
       setBlog(res.data);
     });
-  }, []);
-  useEffect(() => {
-    Axios.get(`${api}.article`);
-  });
+  }, [pageCount]);
   return (
     <React.Fragment>
       <div className="flex flex-wrap justify-center mt-10 mb-10 ">
-        {blog.slice(0, visible).map((blog) => (
+        {blog.map((blog) => (
           <div
             key={blog._id}
             className="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow  my-5 mx-5 overflow-hidden"
@@ -59,18 +59,16 @@ const AllBlogs = () => {
         ))}
       </div>
       <div className="w-full flex justify-center my-10">
-        <button
-          className="py-3 px-8 bg-blue-400 text-white font-bold rounded-sm flex items-center"
-          type="submit"
-          onClick={showMoreItems}
-        >
-          Show more
-          <span className="w-2" />
-          <ion-icon name="chevron-down-outline"></ion-icon>
+        <button onClick={handleNext} type="submit">
+          next
+        </button>
+        <button onClick={handlePrevious} type="submit">
+          previous
         </button>
       </div>
     </React.Fragment>
   );
 };
+
 
 export default AllBlogs;

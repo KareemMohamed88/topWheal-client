@@ -13,14 +13,14 @@ const BlogDetalis = () => {
     Axios.get(`${api}/article/${Params.id}`).then((res) => {
       setBlog(res.data);
     });
-  }, []);
+  }, [Params.id]);
   return (
     <React.Fragment>
       <div className="container-fluid">
         <Nav />
         <div className="blogContainer">
           <h1 className="text-3xl mb-5">{blog.title}</h1>
-          <img src={blog.mainImg} />
+          <img src={blog.mainImg} alt="faild to load" />
           <br />
           <p>{blog.p1}</p>
           <br />
@@ -28,7 +28,7 @@ const BlogDetalis = () => {
           <br />
           <p>{blog.p3}</p>
           <br />
-          <img src={blog.secondImg} />
+          <img src={blog.secondImg} alt="faild to load" />
           <br />
           <p>{blog.p4}</p>
           <br />
