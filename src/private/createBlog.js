@@ -6,10 +6,11 @@ import Footer from "../components/footer";
 import "./style.css";
 
 const CreateBlog = () => {
-  const api = "http://localhost:3001";
+  const api = "https://dark-puce-seahorse-suit.cyclic.app";
   const [title, setTitle] = useState("");
   const [mainImg, setMainImg] = useState("");
   const [secondImg, setSecondImg] = useState("");
+  const [summary, setSummary] = useState("");
   const [p1, setP1] = useState("");
   const [p2, setP2] = useState("");
   const [p3, setP3] = useState("");
@@ -21,6 +22,7 @@ const CreateBlog = () => {
       title,
       mainImg,
       secondImg,
+      summary,
       p1,
       p2,
       p3,
@@ -41,6 +43,7 @@ const CreateBlog = () => {
           onChange={(e) => setMainImg(e.target.value)}
           type="text"
         />
+        <input maxLength="120" onChange={(e) => setSummary(e.target.value)} type="text" />
         <input onChange={(e) => setP1(e.target.value)} type="text" />
         <input onChange={(e) => setP2(e.target.value)} type="text" />
         <input onChange={(e) => setP3(e.target.value)} type="text" />
@@ -52,7 +55,7 @@ const CreateBlog = () => {
         <input onChange={(e) => setP4(e.target.value)} type="text" />
         <input onChange={(e) => setP5(e.target.value)} type="text" />
         <input onChange={(e) => setP6(e.target.value)} type="text" />
-        <button onClick={createBlog} type="submit" name="submit">
+        <button className="px-3 py-6 bg-indigo-300 text-white flex items-center justify-center" onClick={createBlog} type="submit" name="submit">
           POST
         </button>
       </form>

@@ -19,7 +19,6 @@ const BlogDetalis = () => {
       <Helmet>
         <title>{blog.title}</title>
         <meta name="description" content={blog.p1} />
-        <link rel="icon" type="image/x-icon" href="https://ibb.co/brLNcF1"/>
       </Helmet>
       <div className="container-fluid">
         <Nav />
