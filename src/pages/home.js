@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <React.Fragment>
       <div className="container-fluid">
-        <Nav/>
         <Header/>
+        <Nav/>
         <AllBlogs/>
         <Footer/>
       </div>

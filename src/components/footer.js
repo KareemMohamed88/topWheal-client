@@ -3,10 +3,9 @@ function footer() {
   return (
     <React.Fragment>
       <div
-        className="footer"
+        className="bg-indigo-300"
         style={{
           width: "100%",
-          background: "linear-gradient(90deg, #22d3ee, #60a5fa)",
           height: "10px",
         }}
       ></div>

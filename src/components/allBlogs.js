@@ -11,7 +11,7 @@ const AllBlogs = () => {
     setPageCount((prevValue) => prevValue - 1);
   };
   useEffect(() => {
-    Axios.get(`${api}/article?page=${pageCount}&limit=2`).then((res) => {
+    Axios.get(`${api}/article?page=${pageCount}&limit=6`).then((res) => {
       setBlog(res.data);
     });
   }, [pageCount]);
@@ -21,23 +21,29 @@ const AllBlogs = () => {
         {blog.map((blog) => (
           <div
             key={blog._id}
-            className="max-w-sm h-fit bg-white border border-gray-200 rounded-lg shadow  my-5 mx-5 overflow-hidden"
+            className="max-w-sm h-fit bg-white border border-gray-200  shadow  my-5 mx-5 overflow-hidden"
           >
             <a className="text-transparent" href={`/blogs/${blog._id}`}>
               <div className="h-44 overflow-hidden flex justify-center items-center">
-                <img width={"100%"} height={"100%"} className="rounded-t-lg" src={blog.mainImg} alt="" />
+                <img
+                  width={"100%"}
+                  height={"100%"}
+                  className="rounded-t-lg"
+                  src={blog.mainImg}
+                  alt=""
+                />
               </div>
               learn more
             </a>
-            <div className="p-5">
-                <h5 className="mb-6 text-2xl  text-gray-900">
-                  {blog.title}
-                </h5>
+
+            <div className="p-3">
+              <h5 className="mb-6 text-2xl  text-gray-900">{blog.title}</h5>
 
               <p>
+                {blog.p1}
                 <a
                   href={`/blogs/${blog._id}`}
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 "
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-300 rounded-md hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-blue-300 "
                 >
                   learn more
                   <svg
@@ -60,10 +66,18 @@ const AllBlogs = () => {
         ))}
       </div>
       <div className="w-full flex justify-center my-10">
-        <button className="px-5 py-3 bg-blue-400 text-white font-bold border rounded-s-md" onClick={handlePrevious} type="submit">
+        <button
+          className="px-5 py-3 bg-indigo-300 hover:bg-indigo-500 text-white font-bold border rounded-s-md"
+          onClick={handlePrevious}
+          type="submit"
+        >
           previous
         </button>
-        <button className="px-5 py-3 bg-blue-400 text-white font-bold border rounded-e-md" onClick={handleNext} type="submit">
+        <button
+          className="px-5 py-3 bg-indigo-300 hover:bg-indigo-500 text-white font-bold border rounded-e-md"
+          onClick={handleNext}
+          type="submit"
+        >
           next
         </button>
       </div>
