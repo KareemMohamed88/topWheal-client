@@ -11,6 +11,13 @@ root.render(
     <HelmetProvider>
     <Router>
       <App />
+      <div
+        className="bg-indigo-300"
+        style={{
+          width: "100%",
+          height: "10px",
+        }}
+      ></div>
     </Router>
     </HelmetProvider>
   </React.StrictMode>

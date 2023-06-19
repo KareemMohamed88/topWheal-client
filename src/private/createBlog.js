@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import Nav from "../components/nav";
-import Footer from "../components/footer";
 
 import "./style.css";
 
@@ -59,7 +58,6 @@ const CreateBlog = () => {
           POST
         </button>
       </form>
-      <Footer />
     </React.Fragment>
   );
 };

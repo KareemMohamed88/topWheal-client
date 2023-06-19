@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import Axios from "axios";
 import Nav from "../components/nav";
-import Footer from "../components/footer";
 import "../styles/blogDetalis.css";
 const BlogDetalis = () => {
   const api = "https://dark-puce-seahorse-suit.cyclic.app";
@@ -41,7 +40,6 @@ const BlogDetalis = () => {
           <p>{blog.p6}</p>
         </div>
         <br />
-        <Footer />
       </div>
     </React.Fragment>
   );
