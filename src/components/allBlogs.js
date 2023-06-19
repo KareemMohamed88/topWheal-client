@@ -15,6 +15,7 @@ const AllBlogs = () => {
       setBlog(res.data);
     });
   }, [pageCount]);
+
   return (
     <React.Fragment>
       <div className="flex flex-wrap justify-center mt-10 mb-10 ">
@@ -67,7 +68,7 @@ const AllBlogs = () => {
           </div>
         ))}
       </div>
-      <div className="w-full flex justify-center my-10">
+      <div className="test w-full flex justify-center my-10">
         <button
           className="px-5 py-3 bg-indigo-300 hover:bg-indigo-500 text-white font-bold border rounded-s-md"
           onClick={handlePrevious}
