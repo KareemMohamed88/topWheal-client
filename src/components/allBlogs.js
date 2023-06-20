@@ -24,7 +24,7 @@ const AllBlogs = () => {
             key={blog._id}
             className="max-w-sm h-fit bg-white border border-gray-200  shadow  my-5 mx-5 overflow-hidden"
           >
-            <a className="text-transparent" href={`/blogs/${blog._id}`}>
+            <a className="text-transparent" href={`/article/${blog._id}`}>
               <div className="h-44 overflow-hidden flex justify-center items-center">
                 <img
                   width={"100%"}
@@ -45,7 +45,7 @@ const AllBlogs = () => {
                 <br />
                 <br />
                 <a
-                  href={`/blogs/${blog._id}`}
+                  href={`/article/${blog._id}`}
                   className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-300 rounded-md hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-blue-300 "
                 >
                   learn more
