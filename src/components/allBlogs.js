@@ -25,7 +25,7 @@ const AllBlogs = () => {
             className="max-w-sm h-fit bg-white border border-gray-200  shadow  my-5 mx-5 overflow-hidden"
           >
             <a className="text-transparent" href={`/blogs/${blog._id}`}>
-              <div className="h-50 overflow-hidden flex justify-center items-center">
+              <div className="h-44 overflow-hidden flex justify-center items-center">
                 <img
                   width={"100%"}
                   height={"100%"}
