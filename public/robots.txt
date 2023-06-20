@@ -2,4 +2,4 @@ User-agent: Googlebot
 Disallow: 
 
 
-Sitemap: https://topwheal.vercel.app/sitemap.xml
+Sitemap: https://topwheal-2xbu.onrender.com/sitemap.xml
