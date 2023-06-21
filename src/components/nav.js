@@ -6,9 +6,9 @@ const Navbar = () => {
         <h1 style={{fontSize: "20px"}}>supercharger</h1>
       </div>
       <ul>
-        <li style={{display: "inline-block", margin: "0 10px"}}><a href="#">Home</a></li>
-        <li style={{display: "inline-block", margin: "0 10px"}}><a href="#">About us</a></li>
-        <li style={{display: "inline-block", margin: "0 10px"}}><a href="#"></a>Contact us</li>
+        <li style={{display: "inline-block", margin: "0 10px"}}><a href="#w">Home</a></li>
+        <li style={{display: "inline-block", margin: "0 10px"}}><a href="#w">About us</a></li>
+        <li style={{display: "inline-block", margin: "0 10px"}}><a href="#w">Contact us</a></li>
       </ul>
     </div>
   );
