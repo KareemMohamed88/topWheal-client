@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import Axios from "axios";
 import Nav from "../components/nav";
-import "../styles/blogDetalis.css";
 const BlogDetalis = () => {
   const api = "https://unusual-fish-girdle.cyclic.app";
   const [blog, setBlog] = useState({});

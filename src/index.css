@@ -15,3 +15,81 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/*Nav Bar Styles --------------------*/
+
+.nav {
+  width: 100%;
+}
+
+.desktop-nav {
+  height: 60px;
+  display: flex;
+  padding: 0 18%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (min-width: 100px) and (max-width: 850px) {
+  .desktop-nav {
+      padding: 0 10%;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 650px) {
+  .desktop-nav {
+      display: none;
+  }
+
+  .mobile-nav {
+      display: block;
+      height: fit-content;
+  }
+
+  .mobile-nav .head {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 4%;
+  }
+
+  .mobile-nav .links {
+      padding: 0 4%;
+  }
+
+  .mobile-nav .links ul li {
+      margin: 10px 0;
+  }
+}
+
+/*Blogs Details Styles --------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.blogContainer{
+    width: 50%;
+    margin: 20px auto;
+}
+.blogContainer h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.blogContainer img{
+    width: 100%;
+}
+@media (min-width: 100px) and (max-width:639px) {
+   .blogContainer{
+    width: 95%;
+   } 
+}
