@@ -5,7 +5,7 @@ import Nav from "../components/nav";
 import "./style.css";
 
 const CreateBlog = () => {
-  const api = "https://dark-puce-seahorse-suit.cyclic.app";
+  const api = "https://unusual-fish-girdle.cyclic.app";
   const [title, setTitle] = useState("");
   const [mainImg, setMainImg] = useState("");
   const [secondImg, setSecondImg] = useState("");

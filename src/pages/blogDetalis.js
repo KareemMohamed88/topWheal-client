@@ -5,7 +5,7 @@ import Axios from "axios";
 import Nav from "../components/nav";
 import "../styles/blogDetalis.css";
 const BlogDetalis = () => {
-  const api = "https://dark-puce-seahorse-suit.cyclic.app";
+  const api = "https://unusual-fish-girdle.cyclic.app";
   const [blog, setBlog] = useState({});
   const Params = useParams();
   useEffect(() => {
