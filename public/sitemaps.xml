@@ -2,8 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>
-          https://supercharger.vercel.app/article/6490d844274cb1cf4d285169
-
+     https://supercharger.vercel.app/
+    </loc>
+  </url>
+  <url>
+    <loc>
+     https://supercharger.vercel.app/article/6490d844274cb1cf4d285169
     </loc>
   </url>
 </urlset>
